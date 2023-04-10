@@ -104,11 +104,17 @@ public class DialogContent extends Parent{
     // user story 7
     // // name inputunu (nameInput2) den alabilirsiniz
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-text-field//input)[1]")
+    public WebElement newLocationName;
+
+    @FindBy(xpath = "(//ms-text-field//input)[2]")
     public WebElement newLocationShortName;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//ms-integer-field//input")
     public WebElement newLocationCapacity;
+
+    @FindBy(xpath = "//ms-save-button")
+    public WebElement blankSaveButton;
 
     // save butonuna basınız
     ///////////////////////////////////
@@ -144,6 +150,8 @@ public class DialogContent extends Parent{
             case "newSchoolDepartmanName":return newSchoolDepartmanName;
             case "newSchoolDepartmanCode":return newSchoolDepartmanCode;
             case "deleteDiaologBtn":return deleteDiaologBtn;
+            case "newLocationName":return  newLocationName;
+            case "blankSaveButton":return blankSaveButton;
 
         }
         return null;
