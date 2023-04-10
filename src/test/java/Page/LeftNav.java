@@ -30,7 +30,7 @@ public class LeftNav extends Parent{
 
     // user story 3 ve 4
     // left nav daki dashboard un altındaki setup
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//span[text()='Setup'])[1]")
     public WebElement firstSetup;
 
     @FindBy(xpath = "")
@@ -61,10 +61,10 @@ public class LeftNav extends Parent{
     // user story 7
     // setup ı ortak locaterdan alınız
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[text()='School Setup']")
     public WebElement schoolSetup;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//span[text()='Locations'])[1]")
     public WebElement locations;
 
     public WebElement getWebElement(String strButton){
