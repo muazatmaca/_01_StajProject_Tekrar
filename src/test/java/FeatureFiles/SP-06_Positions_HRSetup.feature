@@ -11,32 +11,30 @@ Feature: Add,Edit,Delete Functionality
       | humonResourscesSetup |
       | positions            |
 
-    Then Click add button
+    Then Click on the element in Dialog Content
       | addButton |
 
-    And Sending the keys for adding new position
+    And User sending the keys in Dialog Content
       | nameInput3           | Etk123 |
       | newPositionShortName | e1t2k3 |
 
-    And Click the save button
+    And Click on the element in Dialog Content
       | saveButton |
 
     Then Success message should be displayed
 
-    Then Click the edit button
+    Then Click on the element in Dialog Content
       | editButton |
 
-    Then Sending the keys for editing the position
-      | nameInput3           | Etka1234 |
-      | newPositionShortName | e1t2k3a4 |
-
-    And Click the save button
+    Then User sending the keys in Dialog Content
+      | nameInput3           | Etk123   |
+      | newPositionShortName | e1t2k345 |
+    And Click on the element in Dialog Content
       | saveButton |
 
     Then Success message should be displayed
 
-    Then Click on the delete button and delete the position
-      | deleteButton       |
-      | deleteDiaologBtn |
+    Then User delete item from Dialog Content
+      | Etk123 |
 
     Then Success message should be displayed
