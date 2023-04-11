@@ -5,29 +5,67 @@ Feature: Login Functionality
     Given Nagivate to Campus
     When Enter username and password and click login button
     Then User should login succesfully
-
-  Scenario: Create New Locations
-
     And Click on the element in LeftNav
       | firstSetup  |
       | schoolSetup |
       | locations   |
 
+  Scenario: Create New Locations
+
     And Click on the element in Dialog Content
       | addButton |
 
     And User sending the keys in Dialog Content
-      | newLocationName      | muaatmacaa |
-      | newLocationShortName | at1233     |
-      | newLocationCapacity  | 10         |
+      | newLocationName      | maatmacaa |
+      | newLocationShortName | at1233    |
+      | newLocationCapacity  | 10        |
 
     And Click on the element in Dialog Content
       | blankSaveButton |
       | saveButton      |
 
-    Scenario: Delete new locations
+    Then Success message should be displayed
 
-      And User delete item from Dialog Content
+  Scenario: Same locations checkout
+
+    And Click on the element in Dialog Content
+      | addButton |
+
+    And User sending the keys in Dialog Content
+      | newLocationName      | maatmacaa |
+      | newLocationShortName | at1233    |
+      | newLocationCapacity  | 10        |
+
+    And Click on the element in Dialog Content
+      | blankSaveButton |
+      | saveButton      |
+
+    Then Already exist message should be displayed
+
+  Scenario: Editing the resulting location
+
+    And Click on the element in Dialog Content
+      | editButton |
+    And User sending the keys in Dialog Content
+      | newLocationName      | mzatm1234 |
+      | newLocationShortName | atm543    |
+    And Click on the element in Dialog Content
+      | saveButton |
+    Then Success message should be displayed
+
+  Scenario: Delete last locations
+
+    And Click on the element in Dialog Content
+      | deleteButton     |
+      | deleteDiaologBtn |
+
+    Then Success message should be displayed
+
+
+
+
+
+
 
 
 
