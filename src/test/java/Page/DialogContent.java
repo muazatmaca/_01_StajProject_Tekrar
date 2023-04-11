@@ -85,18 +85,20 @@ public class DialogContent extends Parent{
 
     // user story 5
     // name inputunu (nameInput2) den alabilirsiniz
-    @FindBy(xpath = "(//ms-text-field/input)[3]") // new position eklerken gereken nameInput
-    public WebElement nameInput3;
-    @FindBy(xpath = "//ms-text-field[@formcontrolname='shortName']/input")
+    @FindBy(xpath = "")
     public WebElement newPositionShortName;
 
     // save butonuna basınız
 
     //////////////////////////////////////////////
     // user story 6
+    // name inputunu (nameInput2) den alabilirsiniz
 
-    @FindBy(xpath = "//div[contains(text(),'successfully')]")
-    public WebElement successMessage;
+    @FindBy(xpath = "")
+    public WebElement newSubjectCategoryCode;
+
+    // save butonuna basınız
+
     ///////////////////////////////////////////
 
     // user story 7
@@ -142,7 +144,7 @@ public class DialogContent extends Parent{
             case "description":return description;
             case "newFielsCode":return newFielsCode;
             case "newPositionShortName":return newPositionShortName;
-            case "successMessage":return successMessage;
+            case "newSubjectCategoryCode":return newSubjectCategoryCode;
             case "newLocationShortName":return newLocationShortName;
             case "newLocationCapacity":return newLocationCapacity;
             case "newSchoolDepartmanName":return newSchoolDepartmanName;
@@ -150,7 +152,7 @@ public class DialogContent extends Parent{
             case "deleteDiaologBtn":return deleteDiaologBtn;
             case "newLocationName":return  newLocationName;
             case "blankSaveButton":return blankSaveButton;
-            case "nameInput3":return nameInput3;
+
         }
         return null;
     }

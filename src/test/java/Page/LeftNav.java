@@ -15,11 +15,11 @@ public class LeftNav extends Parent{
     public WebElement setupButton;
 
     // user story 1 ve user story 2 locater lar
-    @FindBy(xpath = "//span[text()='Human Resources']")
+    @FindBy(xpath = "")
     public WebElement humonResources;
 
     // humon resource un altındaki setup
-    @FindBy(xpath = "(//span[text()='Setup'])[3]")
+    @FindBy(xpath = "")
     public WebElement humonResourscesSetup;
 
     @FindBy(xpath = "")
@@ -44,7 +44,7 @@ public class LeftNav extends Parent{
 
     // user story 5
     // diğer locaterlar ortak yukarı tarafı inceleyiniz
-    @FindBy(xpath = "(//span[text()='Positions'])[1]")
+    @FindBy(xpath = "")
     public WebElement positions;
 
     // user Story 6
