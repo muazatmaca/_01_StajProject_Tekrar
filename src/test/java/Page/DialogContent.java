@@ -47,6 +47,9 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement deleteDiaologBtn;
 
+    @FindBy(xpath = "//div[contains(text(),'already exists')]")
+    public WebElement alreadyExistText;
+
     // user story 1 ve 2
     // position categorries te ve attestation da ekle yaptıktan sonra çıkan name dialogun locater i
     @FindBy(xpath = "(//ms-text-field//input)[2]")
@@ -151,6 +154,7 @@ public class DialogContent extends Parent{
             case "newLocationName":return  newLocationName;
             case "blankSaveButton":return blankSaveButton;
             case "nameInput3":return nameInput3;
+            case "alreadyExistText":return alreadyExistText;
         }
         return null;
     }
