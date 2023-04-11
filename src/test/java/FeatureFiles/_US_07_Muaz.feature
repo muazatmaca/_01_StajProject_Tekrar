@@ -25,3 +25,9 @@ Feature: Login Functionality
       | blankSaveButton |
       | saveButton      |
 
+    Scenario: Delete new locations
+
+      And User delete item from Dialog Content
+
+
+
