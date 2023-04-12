@@ -23,6 +23,12 @@ Feature: Add,Edit,Delete Functionality
 
     Then Success message should be displayed
 
+  Scenario: Edit Function
+    When Click on the element in LeftNav
+      | humonResources       |
+      | humonResourscesSetup |
+      | positions            |
+
     Then Click on the element in Dialog Content
       | editButton |
 
@@ -33,6 +39,12 @@ Feature: Add,Edit,Delete Functionality
       | saveButton |
 
     Then Success message should be displayed
+
+  Scenario: Delete Function
+    When Click on the element in LeftNav
+      | humonResources       |
+      | humonResourscesSetup |
+      | positions            |
 
     Then User delete item from Dialog Content
       | Etk123 |
