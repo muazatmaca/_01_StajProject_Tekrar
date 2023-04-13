@@ -41,7 +41,7 @@ public class LeftNav extends Parent{
 
     // user story 4
     // diğer locaterlar ortak yukarı tarafı inceleyiniz
-    @FindBy(xpath = "")
+    @FindBy(xpath = "" )
     public WebElement fields;
 
     // user Story 5
@@ -107,8 +107,8 @@ public class LeftNav extends Parent{
         switch (strButton){
 
             case "setupButton":return setupButton;
-            case "humonResources":return humonResources;
-            case "humonResourscesSetup":return humonResourscesSetup;
+            case "humanResources":return humonResources;
+            case "humanResourscesSetup":return humonResourscesSetup;
             case "positionCategories":return positionCategories;
             case "attestations":return attestations;
             case "firstSetup":return firstSetup;
