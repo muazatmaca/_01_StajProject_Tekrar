@@ -55,6 +55,8 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//ms-text-field//input)[2]")
     public WebElement nameInput2;
 
+
+
     // save butonunu ortak locater dan alınız
 
     /////////////////////////////////////////////////
