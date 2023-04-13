@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class DialogContent extends Parent{
+public class DialogContent extends Parent {
 
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
@@ -52,6 +52,9 @@ public class DialogContent extends Parent{
 
     @FindBy(xpath = "(//ms-text-field//input)[2]")
     public WebElement nameInput2;
+
+    @FindBy(xpath = "//div[contains(text(),'Position Category successfully created')]")
+    public WebElement successMsg;
 
     // save butonunu ortak locater dan alınız
 
@@ -131,45 +134,42 @@ public class DialogContent extends Parent{
 
     public WebElement getWebElement(String strButton) {
 
-        switch (strButton){
+        switch (strButton) {
 
-            case "addButton":return addButton;
-            case "editButton":return editButton;
-            case "deleteButton":return deleteButton;
-            case "nameInput":return nameInput;
-            case "searchButton":return searchButton;
-            case "saveButton":return saveButton;
-            case "nameInput2":return nameInput2;
-            case "selectStage":return selectStage;
-            case "containsStage":return containsStage;
-            case "description":return description;
-            case "newFielsCode":return newFielsCode;
-            case "newPositionShortName":return newPositionShortName;
-            case "newSubjectCategoryCode":return newSubjectCategoryCode;
-            case "newLocationShortName":return newLocationShortName;
-            case "newLocationCapacity":return newLocationCapacity;
-            case "newSchoolDepartmanName":return newSchoolDepartmanName;
-            case "newSchoolDepartmanCode":return newSchoolDepartmanCode;
-            case "deleteDiaologBtn":return deleteDiaologBtn;
-            case "newLocationName":return  newLocationName;
-            case "blankSaveButton":return blankSaveButton;
+            case "addButton": return addButton;
+            case "editButton": return editButton;
+            case "deleteButton": return deleteButton;
+            case "nameInput": return nameInput;
+            case "searchButton": return searchButton;
+            case "saveButton": return saveButton;
+            case "nameInput2": return nameInput2;
+            case "selectStage": return selectStage;
+            case "containsStage": return containsStage;
+            case "description": return description;
+            case "newFielsCode": return newFielsCode;
+            case "newPositionShortName": return newPositionShortName;
+            case "newSubjectCategoryCode": return newSubjectCategoryCode;
+            case "newLocationShortName": return newLocationShortName;
+            case "newLocationCapacity": return newLocationCapacity;
+            case "newSchoolDepartmanName": return newSchoolDepartmanName;
+            case "newSchoolDepartmanCode": return newSchoolDepartmanCode;
+            case "deleteDiaologBtn": return deleteDiaologBtn;
+            case "newLocationName": return newLocationName;
+            case "blankSaveButton": return blankSaveButton;
+            case "successMsg": return successMsg;
 
         }
         return null;
     }
 
-    public void deleteItem(String searchText){
-        sendKeysFunction(nameInput,searchText);
+    public void deleteItem(String searchText) {
+        sendKeysFunction(nameInput, searchText);
         clickFunction(searchButton);
-        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"),0));
+        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"), 0));
 
         clickFunction(deleteButton);
         clickFunction(deleteDiaologBtn);
     }
-
-
-
-
 
 
 }

@@ -12,13 +12,19 @@ Feature:  Human Resources Functionality
       | humanResourscesSetup |
       | positionCategories   |
 
-   And Click on the element in Dialog Content
-    |addButton|
+    And Click on the element in Dialog Content
+      | addButton |
 
     And User sending the keys in Dialog Content
-    |nameInput2|Hatice|
+      | nameInput2 | Hatice1 |
 
     And Click on the element in Dialog Content
-    |saveButton|
+      | saveButton |
+
+    Then Success message should be displayed
+
+    And User delete item from Dialog Content
+      | Hatice1 |
+
 
 
