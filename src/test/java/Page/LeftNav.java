@@ -89,7 +89,7 @@ public class LeftNav extends Parent{
     // user story 11
     // setup ve parameters locaterları yukarıdan al
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[text()='Discounts']")
     public WebElement disCounts;
 
     // user story 12

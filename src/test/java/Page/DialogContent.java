@@ -136,13 +136,16 @@ public class DialogContent extends Parent{
     // user story 9
     // nameınput yukarıdaki locaterdan buluyorsunuz
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-text-field//input)[3]")
     public WebElement newBankAccountIban;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//span[text()='Currency'])[3]")
     public WebElement newBankAccountCurrency;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[text()=' EUR ']")
+    public WebElement selectEuro;
+
+    @FindBy(xpath = "(//ms-text-field//input)[4]")
     public WebElement integrationCode;
 
     // save buttona basınız
@@ -161,13 +164,13 @@ public class DialogContent extends Parent{
 
     // user story 11
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-text-field//input)[3]")
     public WebElement newDiscountDescription;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-text-field//input)[4]")
     public WebElement integrationCde;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-integer-field//input)[1]")
     public WebElement priority;
 
     // save tuşuna basınız
@@ -213,6 +216,7 @@ public class DialogContent extends Parent{
             case "newDiscountDescription":return newDiscountDescription;
             case "integrationCde":return integrationCde;
             case "priority":return priority;
+            case "selectEuro":return selectEuro;
 
         }
         return null;
