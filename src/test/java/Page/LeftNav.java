@@ -14,7 +14,7 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
     public WebElement setupButton;
 
-    // user story 1 ve user story 2 locater lar
+    // user story 1
     @FindBy(xpath = "//span[text()='Human Resources']")
     public WebElement humonResources;
 
@@ -28,27 +28,27 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "")
     public WebElement attestations;
 
-    // user story 3 ve 4
+    // user story 2 ve 3
     // left nav daki dashboard un altındaki setup
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
     public WebElement firstSetup;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[text()='Parameters']")
     public WebElement parameters;
 
     @FindBy(xpath = "")
     public WebElement DocumenTypes;
 
-    // user story 5
+    // user story 4
     // diğer locaterlar ortak yukarı tarafı inceleyiniz
     @FindBy(xpath = "")
     public WebElement fields;
 
-    // user Story 6
+    // user Story 5
     @FindBy(xpath = "(//span[text()='Positions'])[1]")
     public WebElement positions;
 
-    //user story 7
+    //user story 6
     @FindBy(xpath = "")
     public WebElement education;
 
@@ -59,7 +59,7 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "")
     public WebElement subjectCategories;
 
-    // user story 8
+    // user story 7
     // setup ı ortak locaterdan alınız
 
     @FindBy(xpath = "//span[text()='School Setup']")
@@ -68,31 +68,31 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Locations'])[1]")
     public WebElement locations;
 
-    // user story 9
+    // user story 8
     // steup ve school setup locaterları yularıdan bulunuz
 
     @FindBy(xpath = "(//span[text()='Locations'])[1]")
     public WebElement departmanents;
 
-    // user story 10
+    // user story 9
     // steup ve parametres locaterları yularıdan bulunuz
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[text()='Bank Accounts']")
     public WebElement bankAccounts;
 
-    // user story 11
+    // user story 10
     // setup ve parametres locaterlarını yukarıdan bulunuz
 
     @FindBy(xpath = "")
     public WebElement gradeLevels;
 
-    // user story 12
+    // user story 11
     // setup ve parameters locaterları yukarıdan al
 
     @FindBy(xpath = "")
     public WebElement disCounts;
 
-    // user story 13
+    // user story 12
     // setup ve parameters locaterları yukarıdan al
 
     @FindBy(xpath = "")

@@ -102,7 +102,7 @@ public class DialogContent extends Parent{
     public WebElement successMessage;
     ///////////////////////////////////////////
 
-    // user story 8
+    // user story 7
     // // name inputunu (nameInput2) den alabilirsiniz
 
     @FindBy(xpath = "(//ms-text-field//input)[1]")
@@ -118,9 +118,9 @@ public class DialogContent extends Parent{
     public WebElement blankSaveButton;
 
     // save butonuna basınız
-    ///////////////////////////////////
+    ////////////////////////////////
 
-    // user story 9
+    // user story 8
     // diğer name locaterleri ile farklı
     @FindBy(xpath = "")
     public WebElement newSchoolDepartmanName;
@@ -131,7 +131,7 @@ public class DialogContent extends Parent{
     // save butonuna basınız
 
 
-    // user story 10
+    // user story 9
     // nameınput yukarıdaki locaterdan buluyorsunuz
 
     @FindBy(xpath = "")
@@ -145,7 +145,7 @@ public class DialogContent extends Parent{
 
     // save buttona basınız
 
-    // user stroy 11
+    // user stroy 10
     // nameInput locaterı yukarıda
     // shortnameInput lacaterı yukarıda
 
@@ -157,7 +157,7 @@ public class DialogContent extends Parent{
 
     // save buttonuna basınız
 
-    // user story 12
+    // user story 11
 
     @FindBy(xpath = "")
     public WebElement newDiscountDescription;
@@ -170,7 +170,7 @@ public class DialogContent extends Parent{
 
     // save tuşuna basınız
 
-    // user stroy 13
+    // user stroy 12
 
     // nameınput loacaterını yukarıdan bulunuz
 
