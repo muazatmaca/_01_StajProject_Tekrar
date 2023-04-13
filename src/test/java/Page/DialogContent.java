@@ -55,8 +55,6 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//ms-text-field//input)[2]")
     public WebElement nameInput2;
 
-
-
     // save butonunu ortak locater dan alınız
 
     /////////////////////////////////////////////////
@@ -136,41 +134,38 @@ public class DialogContent extends Parent{
     // user story 9
     // nameınput yukarıdaki locaterdan buluyorsunuz
 
-    @FindBy(xpath = "(//ms-text-field//input)[3]")
+    @FindBy(xpath = "")
     public WebElement newBankAccountIban;
 
-    @FindBy(xpath = "(//span[text()='Currency'])[3]")
+    @FindBy(xpath = "")
     public WebElement newBankAccountCurrency;
 
-    @FindBy(xpath = "//span[text()=' EUR ']")
-    public WebElement selectEuro;
-
-    @FindBy(xpath = "(//ms-text-field//input)[4]")
+    @FindBy(xpath = "")
     public WebElement integrationCode;
 
     // save buttona basınız
 
     // user stroy 10
     // nameInput locaterı yukarıda
-    // shortnameInput lacaterı yukarıda
-
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='shortName']/input")
+    public WebElement shortNameInput;
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='order']/input")
     public WebElement order;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//div[@class='mat-select-value ng-tns-c88-153']")
     public WebElement nextGrade;
 
     // save buttonuna basınız
 
     // user story 11
 
-    @FindBy(xpath = "(//ms-text-field//input)[3]")
+    @FindBy(xpath = "")
     public WebElement newDiscountDescription;
 
-    @FindBy(xpath = "(//ms-text-field//input)[4]")
+    @FindBy(xpath = "")
     public WebElement integrationCde;
 
-    @FindBy(xpath = "(//ms-integer-field//input)[1]")
+    @FindBy(xpath = "")
     public WebElement priority;
 
     // save tuşuna basınız
@@ -216,8 +211,7 @@ public class DialogContent extends Parent{
             case "newDiscountDescription":return newDiscountDescription;
             case "integrationCde":return integrationCde;
             case "priority":return priority;
-            case "selectEuro":return selectEuro;
-
+            case "shortNameInput":return shortNameInput;
         }
         return null;
     }
