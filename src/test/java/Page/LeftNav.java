@@ -16,13 +16,13 @@ public class LeftNav extends Parent{
 
     // user story 1
     @FindBy(xpath = "//span[text()='Human Resources']")
-    public WebElement humonResources;
+    public WebElement humanResources;
 
     // humon resource un altındaki setup
     @FindBy(xpath = "(//span[text()='Setup'])[3]")
-    public WebElement humonResourscesSetup;
+    public WebElement humanResourscesSetup;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//span[text()='Position Categories'])[1")
     public WebElement positionCategories;
 
     @FindBy(xpath = "")
@@ -41,7 +41,7 @@ public class LeftNav extends Parent{
 
     // user story 4
     // diğer locaterlar ortak yukarı tarafı inceleyiniz
-    @FindBy(xpath = "" )
+    @FindBy(xpath = "xpath = \"//span[text()='Fields']" )
     public WebElement fields;
 
     // user Story 5
@@ -107,8 +107,8 @@ public class LeftNav extends Parent{
         switch (strButton){
 
             case "setupButton":return setupButton;
-            case "humanResources":return humonResources;
-            case "humanResourscesSetup":return humonResourscesSetup;
+            case "humanResources":return humanResources;
+            case "humanResourscesSetup":return humanResourscesSetup;
             case "positionCategories":return positionCategories;
             case "attestations":return attestations;
             case "firstSetup":return firstSetup;
