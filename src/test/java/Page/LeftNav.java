@@ -39,15 +39,16 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "")
     public WebElement DocumenTypes;
 
+    // user story 5
+    // diğer locaterlar ortak yukarı tarafı inceleyiniz
     @FindBy(xpath = "")
     public WebElement fields;
 
-    // user story 5
-    // diğer locaterlar ortak yukarı tarafı inceleyiniz
+    // user Story 6
     @FindBy(xpath = "(//span[text()='Positions'])[1]")
     public WebElement positions;
 
-    // user Story 6
+    //user story 7
     @FindBy(xpath = "")
     public WebElement education;
 
@@ -58,7 +59,7 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "")
     public WebElement subjectCategories;
 
-    // user story 7
+    // user story 8
     // setup ı ortak locaterdan alınız
 
     @FindBy(xpath = "//span[text()='School Setup']")
@@ -66,6 +67,40 @@ public class LeftNav extends Parent{
 
     @FindBy(xpath = "(//span[text()='Locations'])[1]")
     public WebElement locations;
+
+    // user story 9
+    // steup ve school setup locaterları yularıdan bulunuz
+
+    @FindBy(xpath = "(//span[text()='Locations'])[1]")
+    public WebElement departmanents;
+
+    // user story 10
+    // steup ve parametres locaterları yularıdan bulunuz
+
+    @FindBy(xpath = "")
+    public WebElement bankAccounts;
+
+    // user story 11
+    // setup ve parametres locaterlarını yukarıdan bulunuz
+
+    @FindBy(xpath = "")
+    public WebElement gradeLevels;
+
+    // user story 12
+    // setup ve parameters locaterları yukarıdan al
+
+    @FindBy(xpath = "")
+    public WebElement disCounts;
+
+    // user story 13
+    // setup ve parameters locaterları yukarıdan al
+
+    @FindBy(xpath = "")
+    public WebElement nationalities;
+
+
+
+
 
     public WebElement getWebElement(String strButton){
 
@@ -86,6 +121,11 @@ public class LeftNav extends Parent{
             case "subjectCategories":return subjectCategories;
             case "schoolSetup":return schoolSetup;
             case "locations":return locations;
+            case "bankAccounts":return bankAccounts;
+            case "gradeLevels":return gradeLevels;
+            case "disCounts":return disCounts;
+            case "departmanents":return departmanents;
+            case "nationalities":return nationalities;
 
         }
 

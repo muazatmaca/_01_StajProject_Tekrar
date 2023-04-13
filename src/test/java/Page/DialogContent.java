@@ -102,7 +102,7 @@ public class DialogContent extends Parent{
     public WebElement successMessage;
     ///////////////////////////////////////////
 
-    // user story 7
+    // user story 8
     // // name inputunu (nameInput2) den alabilirsiniz
 
     @FindBy(xpath = "(//ms-text-field//input)[1]")
@@ -120,6 +120,7 @@ public class DialogContent extends Parent{
     // save butonuna basınız
     ///////////////////////////////////
 
+    // user story 9
     // diğer name locaterleri ile farklı
     @FindBy(xpath = "")
     public WebElement newSchoolDepartmanName;
@@ -128,6 +129,53 @@ public class DialogContent extends Parent{
     public WebElement newSchoolDepartmanCode;
 
     // save butonuna basınız
+
+
+    // user story 10
+    // nameınput yukarıdaki locaterdan buluyorsunuz
+
+    @FindBy(xpath = "")
+    public WebElement newBankAccountIban;
+
+    @FindBy(xpath = "")
+    public WebElement newBankAccountCurrency;
+
+    @FindBy(xpath = "")
+    public WebElement integrationCode;
+
+    // save buttona basınız
+
+    // user stroy 11
+    // nameInput locaterı yukarıda
+    // shortnameInput lacaterı yukarıda
+
+    @FindBy(xpath = "")
+    public WebElement order;
+
+    @FindBy(xpath = "")
+    public WebElement nextGrade;
+
+    // save buttonuna basınız
+
+    // user story 12
+
+    @FindBy(xpath = "")
+    public WebElement newDiscountDescription;
+
+    @FindBy(xpath = "")
+    public WebElement integrationCde;
+
+    @FindBy(xpath = "")
+    public WebElement priority;
+
+    // save tuşuna basınız
+
+    // user stroy 13
+
+    // nameınput loacaterını yukarıdan bulunuz
+
+
+
 
     public WebElement getWebElement(String strButton) {
 
@@ -155,6 +203,15 @@ public class DialogContent extends Parent{
             case "blankSaveButton":return blankSaveButton;
             case "nameInput3":return nameInput3;
             case "alreadyExistText":return alreadyExistText;
+            case "newBankAccountIban":return newBankAccountIban;
+            case "newBankAccountCurrency":return newBankAccountCurrency;
+            case "integrationCode":return integrationCode;
+            case "order":return order;
+            case "nextGrade":return nextGrade;
+            case "newDiscountDescription":return newDiscountDescription;
+            case "integrationCde":return integrationCde;
+            case "priority":return priority;
+
         }
         return null;
     }
