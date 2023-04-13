@@ -22,7 +22,7 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Setup'])[3]")
     public WebElement humanResourscesSetup;
 
-    @FindBy(xpath = "(//span[text()='Position Categories'])[1")
+    @FindBy(xpath = "(//span[text()='Position Categories'])[1]")
     public WebElement positionCategories;
 
     @FindBy(xpath = "")
@@ -41,7 +41,7 @@ public class LeftNav extends Parent{
 
     // user story 4
     // diğer locaterlar ortak yukarı tarafı inceleyiniz
-    @FindBy(xpath = "xpath = \"//span[text()='Fields']" )
+    @FindBy(xpath = "//span[text()='Fields']" )
     public WebElement fields;
 
     // user Story 5
