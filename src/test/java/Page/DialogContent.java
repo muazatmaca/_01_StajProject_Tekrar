@@ -162,13 +162,13 @@ public class DialogContent extends Parent{
 
     // user story 11
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-text-field//input)[3]")
     public WebElement newDiscountDescription;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-text-field//input)[4]")
     public WebElement integrationCde;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-integer-field//input)[1]")
     public WebElement priority;
 
     // save tuşuna basınız
