@@ -69,6 +69,12 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Locations'])[1]")
     public WebElement locations;
 
+    @FindBy(xpath = "(//span[text()='Departments'])[1]")
+    public WebElement departments;
+
+
+
+
     // user story 8
     // steup ve school setup locaterları yularıdan bulunuz
 
@@ -127,6 +133,7 @@ public class LeftNav extends Parent{
             case "disCounts":return disCounts;
             case "departmanents":return departmanents;
             case "nationalities":return nationalities;
+            case "departments":return departments;
 
 
         }
