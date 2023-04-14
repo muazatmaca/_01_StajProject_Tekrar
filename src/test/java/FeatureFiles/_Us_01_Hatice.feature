@@ -16,12 +16,15 @@ Feature: Human Resources Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Hatice3 |
+      | nameInput2 | Hatice17 |
 
     And Click on the element in Dialog Content
       | saveButton |
-
     Then Success message should be displayed
 
-    And User delete item from Dialog Content
-      | Hatice3 |
+
+
+
+
+
+
