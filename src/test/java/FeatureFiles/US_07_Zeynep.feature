@@ -16,8 +16,8 @@ Feature: Add,Edit,Delete Subject Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | addInput | 3ZeynepGe |
-      | addCode  | 3ZG1111   |
+      | addInput | 4ZeynepGe |
+      | addCode  | 4ZG1111   |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -27,7 +27,7 @@ Feature: Add,Edit,Delete Subject Functionality
   Scenario: Edit Subject Categories
 
     And User sending the keys in Dialog Content
-      | nameInput | 3ZeynepGe |
+      | nameInput | 4ZeynepGe |
 
     Then Click on the element in Dialog Content
       | searchButton |

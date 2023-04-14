@@ -16,8 +16,8 @@ Feature: Add,Edit,Delete Departments Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | addInput | 3zeynepGe |
-      | addCode  | 322111     |
+      | addInput | 4zeynepGe |
+      | addCode  | 422111     |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -30,7 +30,7 @@ Feature: Add,Edit,Delete Departments Functionality
       | editButton |
 
     And User sending the keys in Dialog Content
-      | addInput | 1zeynepGe1 |
+      | addInput | 4zeynepGe1 |
 
     And Click on the element in Dialog Content
       | saveButton |
