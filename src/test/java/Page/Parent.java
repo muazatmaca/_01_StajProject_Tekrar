@@ -27,6 +27,7 @@ public class Parent {
         waitUntilClickable(element);
         scrollToElement(element);
         element.click();
+
     }
 
     public void verifyContainsTextFunction(WebElement element, String value){
