@@ -35,6 +35,13 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//ms-delete-button//button)[1]")
     public WebElement deleteButton;
 
+    // arkadaslar genel Locater ADD button (inputName ve inputCode)icin
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='name']//input")
+    public WebElement addInput;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='code']//input")
+    public WebElement addCode;
+
     @FindBy(xpath = "(//ms-text-field/input)[1]")
     public WebElement nameInput;
 
@@ -212,6 +219,9 @@ public class DialogContent extends Parent{
             case "integrationCde":return integrationCde;
             case "priority":return priority;
             case "shortNameInput":return shortNameInput;
+            case "addInput":return addInput;
+            case "addCode":return addCode;
+
         }
         return null;
     }
