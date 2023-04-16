@@ -16,7 +16,7 @@ Feature: Attestations Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Ayn |
+      | nameInput2 | Aynr |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -31,6 +31,7 @@ Feature: Attestations Functionality
 
     And Click on the element in Dialog Content
       | editButton |
+
     And User sending the keys in Dialog Content
       | nameInput2      | aynurrr|
 

@@ -19,7 +19,7 @@ Feature: Document Types Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Aynur1 |
+      | nameInput2 | Aynur2 |
 
     And Click on the element in Dialog Content
       | selectStage |
@@ -46,7 +46,8 @@ Feature: Document Types Functionality
       | editButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | aynur2|
+      | nameInput2 | aynur|
+
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -55,6 +56,7 @@ Feature: Document Types Functionality
   Scenario: User should be able to delete Document Types
 
     And Click on the element in LeftNav
+
       |setupButton|
       |parameters|
       |DocumenTypes|
