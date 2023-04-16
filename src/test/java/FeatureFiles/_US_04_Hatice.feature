@@ -50,15 +50,18 @@ Feature: Setup parameters Field Functionality
 
         Then Success message should be displayed
 
-        Scenario: Deleting The Saved Fields By Searching
 
+        Scenario: Deleting The Saved Fields By Searching
           And User sending the keys in Dialog Content
             | nameInput | Hatice10|
             | newFielsCode  |12347|
 
+
           And Click on the element in Dialog Content
             | searchButton |
             | deleteButton|
+            |deleteDiaologBtn|
+
           Then Success message should be displayed
 
 
