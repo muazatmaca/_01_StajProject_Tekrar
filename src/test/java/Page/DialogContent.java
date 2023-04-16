@@ -35,6 +35,13 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//ms-delete-button//button)[1]")
     public WebElement deleteButton;
 
+    // arkadaslar genel Locater ADD button (inputName ve inputCode)icin
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='name']//input")
+    public WebElement addInput;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='code']//input")
+    public WebElement addCode;
+
     @FindBy(xpath = "(//ms-text-field/input)[1]")
     public WebElement nameInput;
 
@@ -49,7 +56,7 @@ public class DialogContent extends Parent{
 
     @FindBy(xpath = "//div[contains(text(),'already exists')]")
     public WebElement alreadyExistText;
-
+////input[@id='ms-text-field-6']
     // user story 1 ve 2
     // position categorries te ve attestation da ekle yaptıktan sonra çıkan name dialogun locater i
     @FindBy(xpath = "(//ms-text-field//input)[2]")
@@ -78,7 +85,7 @@ public class DialogContent extends Parent{
     // user story 4
     // name inputunu (nameInput2) den alabilirsiniz
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//input[@data-placeholder='Code']")
     public WebElement newFielsCode;
 
     // sonrasında bir secenek var ama kendisi seçmiş ona herhangi bir işlem yapmıyorum
@@ -212,6 +219,9 @@ public class DialogContent extends Parent{
             case "integrationCde":return integrationCde;
             case "priority":return priority;
             case "shortNameInput":return shortNameInput;
+            case "addInput":return addInput;
+            case "addCode":return addCode;
+
         }
         return null;
     }

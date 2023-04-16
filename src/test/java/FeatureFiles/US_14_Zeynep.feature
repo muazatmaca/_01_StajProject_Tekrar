@@ -1,69 +1,53 @@
-Feature: Human Resources Functionality
+Feature: Add,Edit,Delete Nationalities Functionality
 
-  Background:
+  Background: : Before Scenario
+
     Given Nagivate to Campus
     When Enter username and password and click login button
     Then User should login succesfully
     And Click on the element in LeftNav
-      | humanResources       |
-      | humanResourscesSetup |
-      | positionCategories   |
+      | firstSetup    |
+      | parameters    |
+      | nationalities |
 
-  Scenario:  Adding The Position Categories
+  Scenario: Add Nationalities Categories
 
     And Click on the element in Dialog Content
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Hatice18 |
+      | addInput | 3zeynep |
 
     And Click on the element in Dialog Content
       | saveButton |
+
     Then Success message should be displayed
 
-  Scenario: Entering The Same Information To Position Categories
-    And Click on the element in Dialog Content
-      | addButton |
+  Scenario: Edit Nationalities Categories
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Hatice18 |
+      | nameInput | 3zeynep |
 
     And Click on the element in Dialog Content
-      | saveButton |
-
-    Then Already exist message should be displayed
-
-
-  Scenario:Editing The Position Categories
-
-    And Click on the element in Dialog Content
+      | searchButton |
       | editButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Hatice123 |
+      | addInput | zeynepGdk1 |
 
     And Click on the element in Dialog Content
       | saveButton |
 
     Then Success message should be displayed
 
-  Scenario: Deleting The Saved  Position Category
+  Scenario: Delete last Nationalities
 
-    And Click on the element in Dialog Content
+    And User sending the keys in Dialog Content
+      | nameInput | zeynepGdk1 |
+
+    Then Click on the element in Dialog Content
+      | searchButton     |
       | deleteButton     |
       | deleteDiaologBtn |
 
     Then Success message should be displayed
-
-
-
-
-
-
-
-
-
-
-
-
-
