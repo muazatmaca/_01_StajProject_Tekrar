@@ -166,13 +166,13 @@ public class DialogContent extends Parent{
 
     // user story 11
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//ebrunun kodlari")
     public WebElement newDiscountDescription;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//ebrunun kodlari")
     public WebElement integrationCde;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//ebrunun kodlari")
     public WebElement priority;
 
     // save tuşuna basınız
