@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class US_10_Etka {
+public class US_10_Steps_Etka {
     DialogContent dc=new DialogContent();
     @Then("Delete the user from the list")
     public void deleteTheUserFromTheList(DataTable items) {

@@ -3,9 +3,8 @@ package StepDefinitions;
 import Page.DialogContent;
 import Page.LeftNav;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.ui.Select;
 
-public class US_06_Etka {
+public class US_05_Steps_Etka {
     DialogContent dc = new DialogContent();
     LeftNav ln = new LeftNav();
 

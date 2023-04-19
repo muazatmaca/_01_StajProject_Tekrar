@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
             glue = {"StepDefinitions"}
 
     )
-    public class US10_Etka_Runner extends AbstractTestNGCucumberTests {
+    public class US_10_Runner_Etka extends AbstractTestNGCucumberTests {
     }
 
 
