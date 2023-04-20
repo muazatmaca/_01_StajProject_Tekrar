@@ -13,7 +13,6 @@ public class DialogContent extends Parent{
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    // ortak locater lar
     @FindBy(css = "input[formcontrolname='username']")
     public WebElement username;
 
@@ -35,7 +34,6 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//ms-delete-button//button)[1]")
     public WebElement deleteButton;
 
-    // arkadaslar genel Locater ADD button (inputName ve inputCode)icin
     @FindBy(xpath = "//ms-text-field[@formcontrolname='name']//input")
     public WebElement addInput;
 
@@ -56,61 +54,29 @@ public class DialogContent extends Parent{
 
     @FindBy(xpath = "//div[contains(text(),'already exists')]")
     public WebElement alreadyExistText;
-////input[@id='ms-text-field-6']
-    // user story 1 ve 2
-    // position categorries te ve attestation da ekle yaptıktan sonra çıkan name dialogun locater i
+
     @FindBy(xpath = "(//ms-text-field//input)[2]")
     public WebElement nameInput2;
 
-    // save butonunu ortak locater dan alınız
-
-    /////////////////////////////////////////////////
-    // user story 3
-    // ilk name inputunu (nameInput2) den alabilirsiniz
     @FindBy(xpath = "(//mat-select)[3]")
     public WebElement selectStage;
 
-    // stage in içindeki elemanlardan birisini seçiniz
-    // seçim yaptıktan sonra esc tuşuna basmanız gerekiyor methodları kontrol edin
     @FindBy(xpath = "//span[text()=' Student Registration ']")
     public WebElement containsStage;
 
     @FindBy(xpath = "//textarea[@formcontrolname='description']")
     public WebElement description;
 
-    // save butonu ortak locater dan alınız
-
-    ///////////////////////////////////////////////////
-
-    // user story 4
-    // name inputunu (nameInput2) den alabilirsiniz
-
     @FindBy(xpath = "//input[@data-placeholder='Code']")
     public WebElement newFielsCode;
 
-    // sonrasında bir secenek var ama kendisi seçmiş ona herhangi bir işlem yapmıyorum
-    // save locater i ortaklardan alınız.
-
-    /////////////////////////////////////////////
-
-    // user story 5
-    // name inputunu (nameInput2) den alabilirsiniz
     @FindBy(xpath = "(//ms-text-field/input)[3]") // new position eklerken gereken nameInput
     public WebElement nameInput3;
     @FindBy(xpath = "//ms-text-field[@formcontrolname='shortName']/input")
     public WebElement newPositionShortName;
 
-    // save butonuna basınız
-
-    //////////////////////////////////////////////
-    // user story 6
-
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     public WebElement successMessage;
-    ///////////////////////////////////////////
-
-    // user story 7
-    // // name inputunu (nameInput2) den alabilirsiniz
 
     @FindBy(xpath = "(//ms-text-field//input)[1]")
     public WebElement newLocationName;
@@ -135,36 +101,26 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "")
     public WebElement newSchoolDepartmanCode;
 
-    // save butonuna basınız
-
-
-    // user story 9
-    // nameınput yukarıdaki locaterdan buluyorsunuz
-
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//ms-text-field//input)[3]")
     public WebElement newBankAccountIban;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//mat-select//div)[9]")
     public WebElement newBankAccountCurrency;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[text()=' EUR ']")
+    public WebElement currencySelectEuro;
+
+    @FindBy(xpath = "(//ms-text-field//input)[4]")
     public WebElement integrationCode;
 
-    // save buttona basınız
-
-    // user stroy 10
-    // nameInput locaterı yukarıda
     @FindBy(xpath = "//ms-text-field[@formcontrolname='shortName']/input")
     public WebElement shortNameInput;
+
     @FindBy(xpath = "//ms-text-field[@formcontrolname='order']/input")
     public WebElement order;
 
     @FindBy(xpath = "//div[@class='mat-select-value ng-tns-c88-153']")
     public WebElement nextGrade;
-
-    // save buttonuna basınız
-
-    // user story 11
 
     @FindBy(xpath = "//input [@id='ms-text-field-2']")
     public WebElement newDiscountDescription;
@@ -174,15 +130,6 @@ public class DialogContent extends Parent{
 
     @FindBy(xpath = "//input[@id='ms-integer-field-0']")
     public WebElement priority;
-
-    // save tuşuna basınız
-
-    // user stroy 12
-
-    // nameınput loacaterını yukarıdan bulunuz
-
-
-
 
     public WebElement getWebElement(String strButton) {
 
@@ -221,6 +168,7 @@ public class DialogContent extends Parent{
             case "shortNameInput":return shortNameInput;
             case "addInput":return addInput;
             case "addCode":return addCode;
+            case "currencySelectEuro":return currencySelectEuro;
 
         }
         return null;
