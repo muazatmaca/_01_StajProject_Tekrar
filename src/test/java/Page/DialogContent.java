@@ -122,14 +122,18 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//div[@class='mat-select-value ng-tns-c88-153']")
     public WebElement nextGrade;
 
-    @FindBy(xpath = "//input [@id='ms-text-field-2']")
+    @FindBy(xpath = "(//ms-text-field//input)[3]")
     public WebElement newDiscountDescription;
 
-    @FindBy(xpath = "//input[@id='ms-text-field-3']")
+    @FindBy(xpath = "(//ms-text-field//input)[4]")
     public WebElement integrationCde;
 
-    @FindBy(xpath = "//input[@id='ms-integer-field-0']")
+    @FindBy(xpath = "//ms-integer-field//input")
     public WebElement priority;
+
+    @FindBy(xpath = "(//ms-text-field//input)[1]")
+    public WebElement descriptionInput;
+
 
     public WebElement getWebElement(String strButton) {
 
@@ -169,6 +173,7 @@ public class DialogContent extends Parent{
             case "addInput":return addInput;
             case "addCode":return addCode;
             case "currencySelectEuro":return currencySelectEuro;
+            case "descriptionInput":return descriptionInput;
 
         }
         return null;
