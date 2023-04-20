@@ -14,11 +14,9 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
     public WebElement setupButton;
 
-    // user story 1
     @FindBy(xpath = "//span[text()='Human Resources']")
     public WebElement humanResources;
 
-    // humon resource un altındaki setup
     @FindBy(xpath = "(//span[text()='Setup'])[3]")
     public WebElement humanResourscesSetup;
 
@@ -28,8 +26,6 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Attestations'])[1]")
     public WebElement attestations;
 
-    // user story 2 ve 3
-    // left nav daki dashboard un altındaki setup
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
     public WebElement firstSetup;
 
@@ -39,29 +35,20 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Document Types'])[1]")
     public WebElement DocumenTypes;
 
-    // user story 4
-    // diğer locaterlar ortak yukarı tarafı inceleyiniz
     @FindBy(xpath = "//span[text()='Fields']" )
     public WebElement fields;
 
-    // user Story 5
     @FindBy(xpath = "(//span[text()='Positions'])[1]")
     public WebElement positions;
-
-    //user story 6
 
     @FindBy(xpath = "//span[text()='Education']")
     public WebElement education;
 
-    // farklı setuplar olduğu için farklı adlandırdım
     @FindBy(xpath = "(//span[text()='Setup'])[5]")
     public WebElement educationSetup;
 
     @FindBy(xpath = "(//span[text()='Subject Categories'])[1]")
     public WebElement subjectCategories;
-
-    // user story 7
-    // setup ı ortak locaterdan alınız
 
     @FindBy(xpath = "//span[text()='School Setup']")
     public WebElement schoolSetup;
@@ -72,42 +59,22 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "(//span[text()='Departments'])[1]")
     public WebElement departments;
 
-
-
-
     // user story 8
     // steup ve school setup locaterları yularıdan bulunuz
-
     @FindBy(xpath = "(//span[text()='Locations'])[1]")
     public WebElement departmanents;
-
-    // user story 9
-    // steup ve parametres locaterları yularıdan bulunuz
 
     @FindBy(xpath = "//span[text()='Bank Accounts']")
     public WebElement bankAccounts;
 
-    // user story 10
-    // setup ve parametres locaterlarını yukarıdan bulunuz
-
     @FindBy(xpath = "//span[text()='Grade Levels']")
     public WebElement gradeLevels;
-
-    // user story 11
-    // setup ve parameters locaterları yukarıdan al
 
     @FindBy(xpath = "//span[text()='Discounts']")
     public WebElement disCounts;
 
-    // user story 12
-    // setup ve parameters locaterları yukarıdan al
-
     @FindBy(xpath = "//span[text()='Nationalities']")
     public WebElement nationalities;
-
-
-
-
 
     public WebElement getWebElement(String strButton){
 
@@ -134,12 +101,7 @@ public class LeftNav extends Parent{
             case "departmanents":return departmanents;
             case "nationalities":return nationalities;
             case "departments":return departments;
-
-
         }
-
         return null;
     }
-
-
 }
