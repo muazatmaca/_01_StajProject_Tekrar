@@ -7,8 +7,8 @@ Feature: Add,Edit,Delete Functionality
 
   Scenario: Create Positions
     When Click on the element in LeftNav
-      | humonResources       |
-      | humonResourscesSetup |
+      | humanResources       |
+      | humanResourcesSetup |
       | positions            |
 
     Then Click on the element in Dialog Content
@@ -25,8 +25,8 @@ Feature: Add,Edit,Delete Functionality
 
   Scenario: Edit Function
     When Click on the element in LeftNav
-      | humonResources       |
-      | humonResourscesSetup |
+      | humanResources       |
+      | humanResourcesSetup |
       | positions            |
 
     Then Click on the element in Dialog Content
@@ -42,8 +42,8 @@ Feature: Add,Edit,Delete Functionality
 
   Scenario: Delete Function
     When Click on the element in LeftNav
-      | humonResources       |
-      | humonResourscesSetup |
+      | humanResources       |
+      | humanResourcesSetup |
       | positions            |
 
     Then User delete item from Dialog Content
