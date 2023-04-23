@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = {"src/test/java/FeatureFiles/SP-06_Positions_HRSetup.feature"},
+        features = {"src/test/java/FeatureFiles/US_05_Etka.feature"},
         glue = {"StepDefinitions"}
 
 )

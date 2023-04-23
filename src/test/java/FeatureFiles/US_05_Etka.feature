@@ -15,7 +15,7 @@ Feature: Add,Edit,Delete Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput3           | Etk123 |
+      | nameInput3           | Etk1237 |
       | newPositionShortName | e1t2k3 |
 
     And Click on the element in Dialog Content
@@ -33,7 +33,7 @@ Feature: Add,Edit,Delete Functionality
       | editButton |
 
     Then User sending the keys in Dialog Content
-      | nameInput3           | Etk123   |
+      | nameInput3           | Etk1237   |
       | newPositionShortName | e1t2k345 |
     And Click on the element in Dialog Content
       | saveButton |
@@ -47,6 +47,6 @@ Feature: Add,Edit,Delete Functionality
       | positions            |
 
     Then User delete item from Dialog Content
-      | Etk123 |
+      | Etk1237 |
 
     Then Success message should be displayed
