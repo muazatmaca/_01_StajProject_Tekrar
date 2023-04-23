@@ -14,7 +14,7 @@ Feature: Login Functionality
     And Click on the element in Dialog Content
       | addButton |
     And User sending the keys in Dialog Content
-      | newDiscountDescription | ceylan |
+      | newDiscountDescription | ceylann |
       | integrationCde         | 176    |
       | priority               | 5      |
 
@@ -28,7 +28,7 @@ Feature: Login Functionality
     And Click on the element in Dialog Content
       | addButton |
     And User sending the keys in Dialog Content
-      | newDiscountDescription | ceylan |
+      | newDiscountDescription | ceylann |
       | integrationCde         | 176    |
       | priority               | 5      |
 
@@ -40,19 +40,19 @@ Feature: Login Functionality
 
   Scenario: Edit discount
     And User sending the keys in Dialog Content
-      | descriptionInput | ceylan |
+      | descriptionInput | ceylann |
     And Click on the element in Dialog Content
       | searchButton |
       | editButton   |
     And User sending the keys in Dialog Content
-      | newDiscountDescription | ebruceylan |
+      | newDiscountDescription | ebruceylann |
     And Click on the element in Dialog Content
       | saveButton |
     And Success message should be displayed
 
   Scenario: Delete discount
     And User sending the keys in Dialog Content
-      | newDiscountDescription | ebruceylan |
+      | descriptionInput | ebruceylann |
     And Click on the element in Dialog Content
       | deleteButton     |
       | deleteDiaologBtn |
