@@ -14,8 +14,8 @@ Feature: Setup parameters Field Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | addInput | Hatice10|
-      | addCode  |12347    |
+      | addInput |bedir13 |
+      | addCode  |484454   |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -28,8 +28,8 @@ Feature: Setup parameters Field Functionality
         | addButton |
 
       And User sending the keys in Dialog Content
-        | addInput | Hatice10|
-        | addCode  |12347    |
+        | addInput | bedir13|
+        | addCode  |484454   |
 
       And Click on the element in Dialog Content
         | saveButton |
@@ -42,8 +42,8 @@ Feature: Setup parameters Field Functionality
           | editButton |
 
         And User sending the keys in Dialog Content
-          | addInput | Hatice10|
-          | addCode  |12347    |
+          | addInput | Bedir48|
+          | addCode  |234844   |
 
         And Click on the element in Dialog Content
           | saveButton |
@@ -53,9 +53,7 @@ Feature: Setup parameters Field Functionality
 
         Scenario: Deleting The Saved Fields By Searching
           And User sending the keys in Dialog Content
-            | nameInput | Hatice10|
-            | newFielsCode  |12347|
-
+            | nameInput | Bedir48|
 
           And Click on the element in Dialog Content
             | searchButton |
