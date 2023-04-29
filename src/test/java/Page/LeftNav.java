@@ -17,7 +17,7 @@ public class LeftNav extends Parent{
     @FindBy(xpath = "//span[text()='Human Resources']")
     public WebElement humanResources;
 
-    @FindBy(xpath = "(//span[text()='Setup'])[3]")
+    @FindBy(xpath = "//span[@class='nav-link-title ng-tns-c119-18 ng-star-inserted']")
     public WebElement humanResourcesSetup;
 
     @FindBy(xpath = "(//span[text()='Position Categories'])[1]")

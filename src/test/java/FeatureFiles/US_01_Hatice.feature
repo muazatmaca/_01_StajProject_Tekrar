@@ -6,7 +6,7 @@ Feature: Human Resources Functionality
     Then User should login succesfully
     And Click on the element in LeftNav
       | humanResources       |
-      | humanResourscesSetup |
+      | humanResourcesSetup |
       | positionCategories   |
 
   Scenario:  Adding The Position Categories
