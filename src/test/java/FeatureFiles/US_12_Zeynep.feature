@@ -47,7 +47,9 @@ Feature: Add,Edit,Delete Nationalities Functionality
 
     Then Click on the element in Dialog Content
       | searchButton     |
+    Then Click on the element in Dialog Content
       | deleteButton     |
+    Then Click on the element in Dialog Content
       | deleteDiaologBtn |
 
     Then Success message should be displayed

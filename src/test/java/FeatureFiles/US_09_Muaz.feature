@@ -30,7 +30,7 @@ Feature: Login Functionality
       | addButton |
     And User sending the keys in Dialog Content
       | nameInput2         | muazatmacaaa |
-      | newBankAccountIban | 122          |
+      | newBankAccountIban | 65473        |
     And Click on the element in Dialog Content
       | newBankAccountCurrency |
       | currencySelectEuro     |
@@ -47,7 +47,7 @@ Feature: Login Functionality
     And Click on the element in Dialog Content
       | searchButton |
     And Click on the element in Dialog Content
-      | editButton   |
+      | editButton |
     And User sending the keys in Dialog Content
       | nameInput2 | atmacamuaz |
     And Click on the element in Dialog Content
