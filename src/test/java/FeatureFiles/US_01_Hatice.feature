@@ -15,7 +15,7 @@ Feature: Human Resources Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Hatice18 |
+      | nameInput2 | Hatice182 |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -26,7 +26,7 @@ Feature: Human Resources Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Hatice18 |
+      | nameInput2 | Hatice182 |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -36,11 +36,14 @@ Feature: Human Resources Functionality
 
   Scenario:Editing The Position Categories
 
+    And User sending the keys in Dialog Content
+      | nameInput | Hatice182 |
+
     And Click on the element in Dialog Content
       | editButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Hatice123 |
+      | nameInput2 | Hatice1231 |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -48,6 +51,9 @@ Feature: Human Resources Functionality
     Then Success message should be displayed
 
   Scenario: Deleting The Saved  Position Category
+
+    And User sending the keys in Dialog Content
+      | nameInput | Hatice1231 |
 
     And Click on the element in Dialog Content
       | deleteButton     |
