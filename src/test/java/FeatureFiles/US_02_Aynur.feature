@@ -8,15 +8,15 @@ Feature: Attestations Functionality
   Scenario:  User should be able to Add Attestations
 
     And Click on the element in LeftNav
-      |humanResources|
-      |humanResourscesSetup|
-      |attestations|
+      | humanResources      |
+      | humanResourcesSetup |
+      | attestations        |
 
     And Click on the element in Dialog Content
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2 | Aynr |
+      | nameInput2 | Aynrre |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -25,25 +25,32 @@ Feature: Attestations Functionality
 
   Scenario: User should be able to edit Attestations
     And Click on the element in LeftNav
-      |humanResources|
-      |humanResourscesSetup|
-      |attestations|
+      | humanResources      |
+      | humanResourcesSetup |
+      | attestations        |
+
+    And User sending the keys in Dialog Content
+      | nameInput | Aynrre |
 
     And Click on the element in Dialog Content
       | editButton |
 
     And User sending the keys in Dialog Content
-      | nameInput2      | aynurrr|
+      | nameInput2 | aynurrrr |
 
     And Click on the element in Dialog Content
       | saveButton |
     Then Success message should be displayed
 
   Scenario: User should be able to delete Attestations
+
     And Click on the element in LeftNav
-      |humanResources|
-      |humanResourscesSetup|
-      |attestations|
+      | humanResources      |
+      | humanResourcesSetup |
+      | attestations        |
+
+    And User sending the keys in Dialog Content
+      | nameInput | aynurrrr |
 
     And Click on the element in Dialog Content
       | deleteButton     |
