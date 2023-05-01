@@ -15,9 +15,9 @@ Feature: Add,Edit,Delete Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput      | aaaetk123 |
-      | shortNameInput | aaae1t2   |
-      | order          | 1         |
+      | nameInput      | etka888 |
+      | shortNameInput | ıoew  |
+      | order          | 1       |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -34,9 +34,9 @@ Feature: Add,Edit,Delete Functionality
       | editButton |
 
     Then User sending the keys in Dialog Content
-      | nameInput      | aaaetk123 |
-      | shortNameInput | aaae1t2   |
-      | order          | 1         |
+      | nameInput      | ortayu12 |
+      | shortNameInput | uırtw1   |
+      | order          | 15         |
 
     And Click on the element in Dialog Content
       | saveButton |

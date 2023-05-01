@@ -5,62 +5,68 @@ Feature: Setup parameters Field Functionality
     When Enter username and password and click login button
     Then User should login succesfully
     And Click on the element in LeftNav
-      |setupButton|
-      |parameters|
-      |fields|
+      | setupButton |
+      | parameters  |
+      | fields      |
 
   Scenario: Adding The Fields Under Setup Parameters
     And Click on the element in Dialog Content
       | addButton |
 
     And User sending the keys in Dialog Content
-      | addInput |bedir13 |
-      | addCode  |484454   |
+      | addInput | bedir65 |
+      | addCode  | 4222  |
 
     And Click on the element in Dialog Content
       | saveButton |
 
     Then Success message should be displayed
 
-    Scenario: Entering The Same Information To Fields
+  Scenario: Entering The Same Information To Fields
 
-      And Click on the element in Dialog Content
-        | addButton |
+    And Click on the element in Dialog Content
+      | addButton |
 
-      And User sending the keys in Dialog Content
-        | addInput | bedir13|
-        | addCode  |484454   |
+    And User sending the keys in Dialog Content
+      | addInput | bedir65 |
+      | addCode  | 4222  |
 
-      And Click on the element in Dialog Content
-        | saveButton |
+    And Click on the element in Dialog Content
+      | saveButton |
 
-      Then Already exist message should be displayed
+    Then Already exist message should be displayed
 
-      Scenario:Editing The Fields
+  Scenario:Editing The Fields
 
-        And Click on the element in Dialog Content
-          | editButton |
+    And User sending the keys in Dialog Content
+      | nameInput | bedir65 |
 
-        And User sending the keys in Dialog Content
-          | addInput | Bedir48|
-          | addCode  |234844   |
+    And Click on the element in Dialog Content
+      | editButton |
 
-        And Click on the element in Dialog Content
-          | saveButton |
+    And User sending the keys in Dialog Content
+      | addInput | Bedir481 |
+      | addCode  | 23484490  |
 
-        Then Success message should be displayed
+    And Click on the element in Dialog Content
+      | saveButton |
+
+    Then Success message should be displayed
 
 
-        Scenario: Deleting The Saved Fields By Searching
-          And User sending the keys in Dialog Content
-            | nameInput | Bedir48|
+  Scenario: Deleting The Saved Fields By Searching
+    And User sending the keys in Dialog Content
+      | nameInput | Bedir481 |
 
-          And Click on the element in Dialog Content
-            | searchButton |
-            | deleteButton|
-            |deleteDiaologBtn|
+    And Click on the element in Dialog Content
+      | searchButton     |
 
-          Then Success message should be displayed
+    And Click on the element in Dialog Content
+      | deleteButton     |
+    And Click on the element in Dialog Content
+      | deleteDiaologBtn |
+
+    Then Success message should be displayed
 
 
 
