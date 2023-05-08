@@ -67,15 +67,18 @@ public class DialogContent extends Parent{
     /////////////////////////////////////////////////
     // user story 3
     // ilk name inputunu (nameInput2) den alabilirsiniz
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//mat-select)[3]")
     public WebElement selectStage;
 
     // stage in içindeki elemanlardan birisini seçiniz
     // seçim yaptıktan sonra esc tuşuna basmanız gerekiyor methodları kontrol edin
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[text()=' Student Registration ']")
     public WebElement containsStage;
 
-    @FindBy(xpath = "")
+    // stage in içindeki elemanlardan birisini seçiniz
+    // seçim yaptıktan sonra esc tuşuna basmanız gerekiyor methodları kontrol edin
+
+    @FindBy(xpath = "//textarea[@formcontrolname='description']")
     public WebElement description;
 
     // save butonu ortak locater dan alınız
